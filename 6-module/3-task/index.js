@@ -43,7 +43,6 @@ export default class Carousel {
       let button = carouselInner.querySelectorAll('button');
       button.forEach(item => {
         item.addEventListener('click', () => {
-          console.log(slide.id);
 
           const addProduct = new CustomEvent("product-add", {
             detail: slide.id,
